@@ -1,0 +1,12 @@
+{
+  "name": "claims-chaser-frontend-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bash startup.sh"
+  },
+  "dependencies": {
+    "serve": "14.2.6"
+  }
+}

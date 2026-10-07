@@ -1,0 +1,44 @@
+.us-date-field {
+  position: relative;
+  display: inline-block;
+  width: 168px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.form-group .us-date-field { width: 100%; }
+
+.us-date-field.us-date-field > input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 8px 38px 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+  background: white;
+  color: #111827;
+}
+
+.us-date-field.us-date-field > input.us-date-picker {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  width: 30px;
+  min-width: 0;
+  height: 30px;
+  margin: 0;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: transparent;
+}
+
+.us-date-picker::-webkit-datetime-edit { display: none; }
+.us-date-picker::-webkit-calendar-picker-indicator { margin: 0; cursor: pointer; }
+.us-date-field:focus-within { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 6px; }
+.us-date-field > input[aria-invalid="true"] { border-color: #dc2626; }
+
+.header-actions:has(.us-date-field) { flex-wrap: wrap; max-width: 100%; }
